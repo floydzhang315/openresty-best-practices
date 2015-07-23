@@ -44,7 +44,7 @@ print(s1:get_square())          --output: 2
 print(s1:get_circumference())   --output: 6
 ```
 
--  另一个跟 lua 的 module 模块相关需要注意的点是，当 lua_code_cache on 开启是， require 加载的模块是会被缓存下来的，这样我们的模块就会以最高效的方式运行，直到被显式地调用如下语句：
+-  另一个跟 lua 的 module 模块相关需要注意的点是，当 lua_code_cache on 开启时， require 加载的模块是会被缓存下来的，这样我们的模块就会以最高效的方式运行，直到被显式地调用如下语句：
 
 ```lua
 package.loaded["square"] = nil
